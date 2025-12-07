@@ -6,9 +6,7 @@ function x(first){
             return x(next);
         }
         let res = arr.toString().replaceAll(",","");
-        if(res) {
-            return eval(res);
-        }
+        return eval(res);
     }
 };
 console.log(x(2)("+")(2)("/")(2)("="));
