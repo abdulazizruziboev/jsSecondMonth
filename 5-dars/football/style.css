@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background:url("./stadium_bg.png") no-repeat center;
+    user-select: none;
+}
+.football_box {
+    max-width: 1150px;
+    max-height: 768px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    background: url("./stadium.png") no-repeat center;
+    background-size: cover;
+    padding: 42px 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.football_wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    position: relative;
+}
+.football_ball {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    transition: top 0.7s ease-in-out,left 0.7s ease-in-out;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    background-image: url("./ball.png");
+    background-position: center;
+    background-size: cover;
+}
