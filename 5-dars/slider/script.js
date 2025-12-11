@@ -11,7 +11,7 @@ function activeChanger() {
 };
 
 function imgChanger() {
-    elSelectBtns.forEach((el)=>{
+    elSelectBtns.forEach(()=>{
         elMainImg.src = `./imgs/${this.getAttribute("data-img")}.png`;
     })
 };
